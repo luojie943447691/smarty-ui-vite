@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../dist/assets/entry.9b454591.css">
+</head>
+
+<body>
+    <h1>所有注册</h1>
+    <div id="app"></div>
+    <script type="module">
+        import { createApp } from "vue/dist/vue.esm-bundler.js";
+        import SmartyUI, { SFCButton, TSXButton, Button } from "../../dist/rojer-ui.mjs";
+        createApp({
+            template: `
+                <SButton>1</SButton>
+                <TSXButton>2</TSXButton>
+                <SFCButton>3</SFCButton>
+            `
+        }).use(SmartyUI).mount("#app")
+    </script>
+</body>
+
+</html>
