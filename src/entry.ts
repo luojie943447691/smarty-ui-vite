@@ -1,4 +1,4 @@
-import { App ,h} from "vue";
+import { App, h } from "vue";
 
 import { SButton } from "./button/Button";
 import "uno.css";
