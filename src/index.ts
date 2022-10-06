@@ -1,7 +1,7 @@
 import { createApp } from "vue";
 
 import App from "./App";
-import SmartyUI from './entry'
+import SmartyUI from "./entry";
 import "uno.css";
 const app = createApp(App);
 
