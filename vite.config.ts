@@ -58,12 +58,13 @@ export default defineConfig({
     minify: "terser",
     reportCompressedSize: false,
     sourcemap: true,
-    lib: {
-      entry: "./src/entry.ts",
-      name: "RojerUI",
-      fileName: "rojer-ui",
-      formats: ["es", "umd", "iife"],
-    },
+    // lib: {
+    //   // entry: "./src/entry.ts",
+    //   entry: "./index.html",
+    //   name: "RojerUI",
+    //   fileName: "rojer-ui",
+    //   formats: ["es", "umd", "iife"],
+    // },
     cssCodeSplit: true,
   },
   test: {
