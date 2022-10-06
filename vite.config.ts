@@ -55,7 +55,9 @@ export default defineConfig({
   ],
   build: {
     rollupOptions,
-    minify: false,
+    minify: "terser",
+    reportCompressedSize: false,
+    sourcemap: true,
     lib: {
       entry: "./src/entry.ts",
       name: "RojerUI",

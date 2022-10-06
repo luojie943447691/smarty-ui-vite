@@ -1,30 +1,5 @@
-import { defineComponent, createVNode, createTextVNode, resolveComponent, openBlock, createElementBlock, Fragment, createElementVNode } from "vue";
-const TSXButton = defineComponent({
-  name: "TSXButton",
-  setup() {
-    return () => createVNode("button", null, [createTextVNode("tsxButton")]);
-  }
-});
-const _sfc_main = {
-  name: "SFCButton"
-};
-const _export_sfc = (sfc, props) => {
-  const target = sfc.__vccOpts || sfc;
-  for (const [key, val] of props) {
-    target[key] = val;
-  }
-  return target;
-};
-const _hoisted_1 = /* @__PURE__ */ createElementVNode("button", null, "123", -1);
-function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
-  const _component_IconCarbonApps = resolveComponent("IconCarbonApps");
-  return openBlock(), createElementBlock(Fragment, null, [
-    _hoisted_1,
-    createVNode(_component_IconCarbonApps)
-  ], 64);
-}
-const SFCButton = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render]]);
-const Button = defineComponent({
+import { defineComponent, createVNode, Fragment } from "vue";
+const SButton = defineComponent({
   name: "SButton",
   props: {
     color: {
@@ -90,14 +65,11 @@ const Button = defineComponent({
 const __uno = "";
 const entry = {
   install(app) {
-    app.component(TSXButton.name, TSXButton);
-    app.component(SFCButton.name, SFCButton);
-    app.component(Button.name, Button);
+    app.component(SButton.name, SButton);
   }
 };
 export {
-  Button,
-  SFCButton,
-  TSXButton,
+  SButton,
   entry as default
 };
+//# sourceMappingURL=rojer-ui.mjs.map

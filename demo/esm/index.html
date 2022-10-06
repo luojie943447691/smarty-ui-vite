@@ -6,22 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../dist/assets/entry.9b454591.css">
+    <link rel="stylesheet" href="../../dist/assets/entry.6641fe84.css">
 </head>
 
 <body>
-    <h1>所有注册</h1>
+    <h1>Demo IFFE</h1>
     <div id="app"></div>
-    <script type="module">
-        import { createApp } from "vue/dist/vue.esm-bundler.js";
-        import SmartyUI, { SFCButton, TSXButton, Button } from "../../dist/rojer-ui.mjs";
+    <script src="../../node_modules/vue/dist/vue.global.js"></script>
+    <script src="../../dist/rojer-ui.iife.js"></script>
+    <script>
+        console.log('111')
+        const { createApp } = Vue
+        console.log('vue', Vue)
+        console.log('RojerUI', RojerUI)
         createApp({
             template: `
-                <SButton>1</SButton>
-                <TSXButton>2</TSXButton>
-                <SFCButton>3</SFCButton>
-            `
-        }).use(SmartyUI).mount("#app")
+        <div style="margin-bottom:20px;">
+            <SButton color="blue">主要按钮</SButton>
+            <SButton color="green">绿色按钮</SButton>
+            <SButton color="gray">灰色按钮</SButton>
+            <SButton color="yellow">黄色按钮</SButton>
+            <SButton color="red">红色按钮</SButton>
+        </div>
+        <div style="margin-bottom:20px;"
+        >
+            <SButton color="blue" >朴素按钮</SButton>
+            <SButton color="green" >绿色按钮</SButton>
+            <SButton color="gray" >灰色按钮</SButton>
+            <SButton color="yellow" >黄色按钮</SButton>
+            <SButton color="red" >红色按钮</SButton>
+        </div>
+        <div style="margin-bottom:20px;">
+            <SButton size="small" >小按钮</SButton>
+            <SButton size="medium" >中按钮</SButton>
+            <SButton size="large" >大按钮</SButton>
+        </div>
+        <div style="margin-bottom:20px;">
+            <SButton color="blue"   icon="search">搜索按钮</SButton>
+            <SButton color="green"   icon="edit">编辑按钮</SButton>
+            <SButton color="gray"   icon="check">成功按钮</SButton>
+            <SButton color="yellow"   icon="message">提示按钮</SButton>
+            <SButton color="red"   icon="delete">删除按钮</SButton>
+        </div>
+        <div style="margin-bottom:20px;">
+            <SButton color="blue"   icon="search">1</SButton>
+            <SButton color="green"   icon="edit">2</SButton>
+            <SButton color="gray"   icon="check">3</SButton>
+            <SButton color="yellow"   icon="message">4</SButton>
+            <SButton color="red"   icon="delete">5</SButton>
+        </div>
+    `}).use(RojerUI.default).mount('#app')
     </script>
 </body>
 

@@ -35,6 +35,7 @@
     "happy-dom": "6.0.4",
     "husky": "^8.0.1",
     "prettier": "^2.7.1",
+    "terser": "5.4.0",
     "unocss": "0.45.6",
     "unplugin-auto-import": "^0.11.2",
     "unplugin-icons": "^0.14.11",

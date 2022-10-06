@@ -2,3 +2,7 @@
 
 # 安装 
 pnpm install
+
+# 注意
+- commitlint.config.js 需要改成 utf-8 编码。
+- 提交代码的时候不能以任何符号结尾。
